@@ -11,11 +11,15 @@
 
 ## Start Kafka broker Server:
   - ./bin/kafka-server-start.sh config/server.properties
-•	Create Topic:
+
+## Create Topic:
   - ./bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic upload-photos
-•	List Topic:
+
+## List Topic:
   - ./bin/kafka-topics.sh --list --zookeeper localhost:2181 
-•	Console Producer:
+
+## Console Producer:
   - ./bin/kafka-console-producer.sh --broker-list localhost:9092 --topic upload-photos
-•	Console Consumer:
+
+## Console Consumer:
   - ./bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic upload-photos --from-beginning
