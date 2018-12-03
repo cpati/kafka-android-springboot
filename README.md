@@ -2,11 +2,11 @@
 
 
 
-•	Download kafka:
+Download kafka:
   - wget http://mirrors.sorengard.com/apache/kafka/2.1.0/kafka_2.12-2.1.0.tgz
   - tar -xvzf kafka_2.12-2.1.0.tgz
 	- cd kafka_2.12-2.1.0
-•	Start zoo keeper:
+Start zoo keeper:
   - ./bin/zookeeper-server-start.sh ./config/zookeeper.properties
 •	Start Kafka broker Server:
   - ./bin/kafka-server-start.sh config/server.properties
